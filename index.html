@@ -8,18 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <style>
         body {
             background: #ddd;
-            color: blue;
+            color: #29252A;
+            font-family: "Encode Sans Semi Expanded";
         }
 
         h1 {
-            color: red;
-            font-family: "Michroma", sans-serif;
-            font-weight: 800;
+            color: rgb(29, 29, 29);
+            font-weight: medium;
             font-style: normal;
         }
 
@@ -33,36 +33,81 @@
             justify-content: center;
         }
 
+        /* Pakettide baas */
         .pakett {
-            min-width: 320px;
+            width: 300px;
             background: white;
             margin: 15px;
-            border: thick double #32a1ce;
+            border: 3px solid #485C4E;
+            border-radius: 10px;
             position: relative;
             padding: 10px;
         }
-
-        .pakett h2 {
-            text-align: center;
-        }
-
+ 
+        /* Pakettide ylemise sildi baas */
         .pakett .silt {
             background: white;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            width: max-content;
+            padding: 0.2rem 0.8rem;
+            border-radius: 1rem;
+            border: 0.13rem solid #485C4E;
             position: absolute;
-            top: -20px;
+            top: -15px;
             left: 50%;
             transform: translateX(-50%);
         }
 
+        /* Pakettide pealkiri */
+        .pakett h2 {
+            font-weight: 500;
+            font-size: 1.8rem;
+            letter-spacing: 7%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Pakettide kirjeldus baas */
+        .pakett p.kirjeldus {
+            color: #29252A;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-align: center;
+            margin: 0.5rem 0.6rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 0.8rem;
+            background: #F5F0FF;
+        }
+
+        /* Pakettide garantii tekst */
+        .pakett p.garantii {
+            font-size: 0.8rem;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        /* Premium pakett algab siit */
+        .pakett.premium p.kirjeldus {
+            background: #D1EBBA;
+        }
+
+        .pakett.premium {
+            background: #F5F9DA;
+        }
+
         .btn {
+            font-weight: 500;
+            letter-spacing: 6%;
+            font-size: 1.2rem;
             display: block;
             text-align: center;
-            background: blue;
+            background: #485C4E;
             color: white;
-            padding: 10px;
+            padding: 0.7rem 0.2rem; 
+            margin: 0.9rem 4.5rem;
+            border-radius: 8px;
             text-decoration: none;
         }
 
@@ -79,14 +124,28 @@
             beatae
             fugit eos, harum aut? Sunt beatae animi ea neque, ad reprehenderit maxime iure?</p>
         <div class="paketid">
-            <div class="pakett">
+            <div class="pakett standard">
                 <span class="silt">kõige soodsam</span>
                 <h2>Starter</h2>
+                <span class="esimene-aasta">Esimene aasta</span>
+                <p class="kirjeldus">See pakett sobib hästi kui 
+                    alustad oma esimese kodulehe 
+                    tegemist ning soovid ennast 
+                    Internetis nähtavaks teha.</p>
                 <a class="btn" href="">Telli</a>
+                <p class="garantii"><b>30-päevane raha tagasi garantii</b><br>
+                Kehtib ainult veebimajutuse baaspaketile</p>
             </div>
             <div class="pakett premium">
                 <span class="silt">kõige populaarsem</span>
                 <h2>Premium</h2>
+                <span class="esimene-aasta">Esimene aasta</span>
+                <p class="kirjeldus">Kindel valik kasvava e-äri püstihoidmiseks, 
+                    suurem maht veebile ja e-postile ning 
+                    rohkem samaaegseid veebikülastajaid.</p>
+                <a class="btn" href="">Telli</a>
+                <p class="garantii"><b>30-päevane raha tagasi garantii</b><br>
+                Kehtib ainult veebimajutuse baaspaketile</p>
             </div>
         </div>
     </div>
