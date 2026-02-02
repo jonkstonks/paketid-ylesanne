@@ -35,7 +35,7 @@
 
         /* Pakettide baas */
         .pakett {
-            width: 300px;
+            width: 290px;
             background: white;
             margin: 15px;
             border: 3px solid #485C4E;
@@ -63,22 +63,22 @@
 
         /* Pakettide pealkiri */
         .pakett h2 {
-            font-weight: 500;
-            font-size: 1.8rem;
+            font-weight: 600;
+            font-size: 1.9rem;
             letter-spacing: 7%;
             text-align: center;
             text-transform: uppercase;
-            margin-bottom: 0.2rem;
+            margin-bottom: 1.2rem;
         }
 
         /* Pakettide kirjeldus baas */
         .pakett p.kirjeldus {
             color: #29252A;
-            font-size: 0.8rem;
-            font-weight: 500;
+            font-size: 0.9rem;
+            font-weight: 400;
             text-align: center;
-            margin: 0.5rem 0.6rem;
-            padding: 0.5rem 1.2rem;
+            margin: 1rem 1rem;
+            padding: 0.5rem 1.2rem 0.6rem;
             border-radius: 0.8rem;
             background: #F5F0FF;
         }
@@ -94,11 +94,11 @@
         .esimene-aasta {
             font-size: 0.9rem;
             font-weight: 800;
-            margin: 0.5rem 23%;
+            margin: 0.3rem 21%;
         }
 
         /* Esimene aasta -50% */
-        .esimene-aasta p {
+        .esimene-aasta .miinus50 {
             display: inline-block;
             color: #F5F9DA;
             background: #71B238;
@@ -108,33 +108,34 @@
 
         /* Pakettide hinnad */
         .pakett .hind {
-            margin: -0.5rem 0.5rem 0 1.4rem;
-            padding-top: 0.2rem;
+            margin: -0.5rem 0.3rem 0 1.4rem;
+            padding-top: 0.4rem;
             display: flex;
             align-items: flex-start;
             font-weight: 900;
             font-size: 2.7rem;
         }
-        
+
         /* Pakettide +KM/kuus */
         .hind .km {
-            padding-top: 0.2rem;
-            font-weight: 500;
+            padding-top: 0.4rem;
+            font-weight: 600;
             font-size: 1rem;
         }
 
         /* Pakettide tavahind */
         .pakett .tavahind {
-            padding-top: 0.2rem;
-            font-size: 1rem;
+            padding: 0.7rem 0 0;
+            font-size: 0.9rem;
             display: block;
         }
 
         /* Pakettide feature'id */
         .pakett .features {
             list-style: none;
-            padding: 0.1rem;
-            margin: 1rem 4rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            margin: 0.2rem 3rem 0;
         }
 
         .features li {
@@ -142,7 +143,10 @@
         }
 
         .features svg {
+            vertical-align: bottom;
             position: relative;
+            padding-top: 0.8rem;
+            padding-right: 0.2rem;
         }
 
         /* Premium pakett algab siit */
@@ -169,13 +173,14 @@
             background: #485C4E;
             color: white;
             padding: 0.7rem 0.2rem;
-            margin: 0.9rem 4.5rem;
+            margin: 1.5rem 4.5rem 2rem;
             border-radius: 8px;
             text-decoration: none;
         }
 
         .btn:hover {
-            background: rgb(59, 29, 59);
+            background: rgb(64, 141, 33);
+            color: #F5F9DA;
         }
     </style>
 </head>
@@ -190,14 +195,15 @@
             <div class="pakett standard">
                 <span class="silt">kõige soodsam</span>
                 <h2>Starter</h2>
-                <span class="esimene-aasta">
-                    <span>Esimene aasta <p>-50%</p></span>
-                </span>
+                <div class="esimene-aasta">
+                    <span>Esimene aasta</span>
+                    <span class="miinus50">-50%</span>
+                </div>
                 <div class="hind">
                     <span class="hind">3,67€</span>
                     <span class="km">+KM/kuu</span>
                 </div>
-                    <span class="tavahind">Tavahind 7,34 €+KM/kuu</span>
+                <span class="tavahind">Tavahind 7,34 €+KM/kuu</span>
                 <ul class="features standard">
                     <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="11" cy="11" r="11" fill="#71B238" />
@@ -229,14 +235,15 @@
             <div class="pakett premium">
                 <span class="silt">kõige populaarsem</span>
                 <h2>Premium</h2>
-                <span class="esimene-aasta">
-                    <span>Esimene aasta <p>-50%</p></span>
-                </span>
+                <div class="esimene-aasta">
+                    <span>Esimene aasta</span>
+                    <span class="miinus50">-50%</span>
+                </div>
                 <div class="hind">
                     <span class="hind">6,49€</span>
                     <span class="km">+KM/kuu</span>
                 </div>
-                    <span class="tavahind">Tavahind 12,94 €+KM/kuu</span>
+                <span class="tavahind">Tavahind 12,94 €+KM/kuu</span>
                 <ul class="features standard">
                     <li><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="11" cy="11" r="11" fill="#71B238" />
