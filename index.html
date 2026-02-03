@@ -23,6 +23,23 @@
             font-style: normal;
         }
 
+        /* V2rviline link */
+        @keyframes rbwLink {
+            0%      {color: #8bb174;}
+            25%     {color: #426b69;}
+            50%     {color: #2a4849;}
+            75%     {color: #222e50;}
+            100%    {color: #8bb174;}
+        }
+
+        a.link {
+            font-weight: 800;
+            font-size: 1.3rem;
+            animation-name: rbwLink;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -100,7 +117,7 @@
         /* Esimene aasta -50% */
         .esimene-aasta .miinus50 {
             display: inline-block;
-            color: #F5F9DA;
+            color: #FFF;
             background: #71B238;
             padding: 0.2rem;
             border-radius: 0.8rem;
@@ -108,12 +125,12 @@
 
         /* Pakettide hinnad */
         .pakett .hind {
-            margin: -0.5rem 0.3rem 0 1.4rem;
+            margin: -0.3rem 0.1rem 0 1.4rem;
             padding-top: 0.4rem;
             display: flex;
             align-items: flex-start;
             font-weight: 900;
-            font-size: 2.7rem;
+            font-size: 2.3rem;
         }
 
         /* Pakettide +KM/kuus */
@@ -156,7 +173,7 @@
 
         /* Premium pakett silt */
         .pakett.premium .silt {
-            color: #F5F9DA;
+            color: #FFF;
             background-color: #64786B;
         }
 
@@ -188,9 +205,7 @@
 <body>
     <div class="container">
         <h1>Paketid</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui in illum magnam iusto iure voluptatum esse
-            beatae
-            fugit eos, harum aut? Sunt beatae animi ea neque, ad reprehenderit maxime iure?</p>
+        <p>---> <a class="link" href="https://www.figma.com/design/W10zUeeiyUS19mGafyIPbm/T%C3%BCpograafia--Copy-?node-id=0-1&t=wVZhsUNksVfWjPTt-1">Link Figma tööle</a> <---</p>
         <div class="paketid">
             <div class="pakett standard">
                 <span class="silt">kõige soodsam</span>
